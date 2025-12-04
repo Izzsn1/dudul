@@ -40,7 +40,12 @@ body {
     margin: 0 auto;
     padding: 0 2rem;
 }
-
+.gallery-item video {
+  width: 100%;       /* video mengikuti lebar container */
+  height: auto;      /* tinggi menyesuaikan proporsi */
+  display: block;    /* hilangkan spasi ekstra */
+  object-fit: cover; /* isi penuh tanpa distorsi, bisa terpotong */
+}
 /* Header */
 .header {
     position: fixed;
@@ -487,5 +492,6 @@ h2 {
     </script>
 </body>
 </html>
+
 
 
